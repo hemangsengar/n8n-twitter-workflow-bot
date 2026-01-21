@@ -1,38 +1,23 @@
-# n8n Twitter Workflow Bot
+# N8N Twitter Workflow Bot
 
-## Overview
-The n8n Twitter Workflow Bot is an automated system designed to manage Twitter interactions, including posting tweets, responding to mentions, and handling direct messages. Utilizing the n8n workflow automation tool, this bot streamlines Twitter communications for users and businesses.
+## Workflow Overview  
+This workflow bot manages Twitter functionality through n8n. This diagram below illustrates the different components of the workflow and how they interact with each other.
 
-## Features
-- **Automatic Tweet Posting**: Schedule tweets to be posted at specific times.
-- **Response Handling**: Automatically respond to mentions and messages based on predefined criteria.
-- **Analytics**: Track engagement metrics for posted tweets.
-- **Customizable Workflows**: Easily modify workflows to fit user needs without coding.
+![Workflow Diagram](./docs/workflow_diagram.png)
 
-## Workflow Diagram
-![Workflow Diagram](path/to/your/workflow-diagram.png)
+## Components Documentation  
+### Trigger  
+The workflow begins with a trigger, determining when the bot will initiate operations based on certain events defined within the workflow. 
 
-## Getting Started
-1. **Prerequisites**:
-   - n8n set up on your server or in the cloud.
-   - Twitter API keys and tokens for authentication.
+### Actions  
+- **Post Tweet:** This action will send a tweet to a specified account when triggered.
+- **Reply:** It enables the bot to respond to mentions or specific messages.
 
-2. **Installation**:
-   - Clone this repository: 
-     ```bash
-     git clone https://github.com/hemangsengar/n8n-twitter-workflow-bot.git
-     ```
-   - Import the workflows into your n8n instance.
+### Filters  
+Filters are crucial for deciding which tweets or interactions to respond to, ensuring that the bot operates efficiently and accurately.
 
-3. **Configuration**:
-   - Configure the Twitter API credentials in the n8n settings.
+### Execution / Process  
+The main processing logic where the incoming events are processed and appropriate actions are executed based on the configuration.
 
-## Usage
-- Start the workflows directly from the n8n interface.
-- Monitor the logs for any failed executions to ensure smooth operation.
-
-## Contributing
-If you wish to contribute, feel free to fork the repository and submit your pull requests!
-
-## License
-This project is licensed under the MIT License.
+## Conclusion  
+This README provides a basic understanding of how the n8n Twitter Workflow Bot operates. For further details, please refer to the documentation or contact the author.
