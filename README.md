@@ -3,7 +3,7 @@
 ## Workflow Overview  
 This workflow bot manages Twitter functionality through n8n. This diagram below illustrates the different components of the workflow and how they interact with each other.
 
-![Workflow Diagram](./docs/workflow_diagram.png)
+![Workflow Diagram](2026-01-21_19-39-39.png)
 
 ## Components Documentation  
 ### Trigger  
